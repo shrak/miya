@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>圖文不符 Q & A</title>
+	<meta name="title" content="圖文不符 Q & A" />
+	<meta name="description" content="圖文不符 Q & A" />
+	<link rel="image_src" href="/images/notify_better_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png">
+	<meta name="author" content="Pete R.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script>
+	$(document).ready(function () {
+		$('div>a>img').hide();
+	});
+	</script>
+	<style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.html {
+      color: #7EC9E6;
+    }
+    code.js {
+      color: #FFAD00;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #444;
+    }
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: rgba(0,0,0,0.5);
+      padding: 10px;
+      width: 410px;
+      clear: both;
+    }
+    .credit a {
+      color: rgba(0,0,0,0.85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #000;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+			top: 40%;
+			left: 50%;
+    }
+
+    .main section.page1 {
+      background:rgb(230, 217, 200);
+    }
+    .main section.page1 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+		.main section.page1 h3 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+		.main section.page4 .page_container {
+      position: relative;
+      top: 10%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+		.main section.page4 {
+			background:rgb(230, 217, 200);
+		}
+		.main section.page4 h1 {
+			text-align: left;
+			padding: 0;
+			margin-bottom: 15px;
+			font-size: 70px;
+			color: black;
+		}
+		.main section.page4 h2 {
+			color: rgba(0,0,0,0.85);
+			text-align: left;
+			width: 600px;
+			line-height: 160%;
+		}
+		.main section.page4 h3 {
+			color: rgba(0,0,0,0.85);
+			text-align: left;
+			width: 600px;
+			line-height: 160%;
+		}
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
+    .main section.page2 {
+      background: #555557 url(back-phone.png) no-repeat center -150px ;
+    }
+    .main section.page2 > img {
+      position: absolute;
+      top: -300px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page2 .page_container {
+      margin-top: 240px;
+      overflow: hidden;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page2 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    .main section.page3 {
+      background:url(tilted-phone.png) no-repeat 156px -150px ;
+    }
+    .main section.page3 .page_container {
+      overflow: hidden;
+      width: 500px;
+      right: -285px;
+    }
+    .main section.page3 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+    }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+    }
+		.main section.page3 h3 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      line-height: 160%;
+      font-weight: 100;
+    }
+		.main section.page5 .page_container {
+      position: relative;
+      top: 10%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+		.main section.page5 {
+			background:url(tilted-phone.png) no-repeat 156px -150px ;
+		}
+		.main section.page5 .page_container {
+			overflow: hidden;
+			width: 500px;
+			right: -285px;
+		}
+		.main section.page5 h1 {
+			text-align: left;
+			padding: 0;
+			margin-bottom: 0;
+			font-size: 70px;
+			letter-spacing: -1px;
+			color: black;
+		}
+		.main section.page5 h2 {
+			color: rgba(0,0,0,0.85);
+			text-align: left;
+			line-height: 160%;
+			font-weight: 100;
+			font-size: 21px;
+		}
+		.main section.page5 h3 {
+			color: rgba(0,0,0,0.85);
+			text-align: left;
+			line-height: 160%;
+			font-weight: 100;
+		}
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+      <section class="page1">
+        <div class="page_container">
+          <h2>問題一<br>
+ 							請任意分享你最有興趣的三種議題領域，並簡述原因（字數限100字內）
+					</h2>
+          <h3>教育<br>
+						在學校碰到鳥事，老想問：「為什麼、幹嘛要、到底是」我想在其中找到解釋。
+ 						<br><br>
+						文化<br>
+						從一碗牛肉麵見證文化的脈絡與淵源，探照：我們是誰、來自哪裡的基本命題。
+ 						<br><br>
+						飲食<br>
+						喜歡吃、討厭吃的不明就裡，想挖掘吃的眾生百態。</h3>
+  	    </div>
+  	    <img src="phones.png" alt="phones">
+      </section>
+
+	    <section class="page3">
+	      <div class="page_container">
+          <h2>問題二<br>
+					若未來能到圖文不符任職，第一個懶人包你會想做什麼樣的議題？
+ 					請簡述原因與說明大致企劃的方向。（字數限200字內）<br><br>
+					</h2>
+					<h3>
+						《治水防洪》<br>
+						當洪水漫漫，人們問為什麼？是氣候變遷、土地開發？還是因為，我們長期忽視了自己的生活習慣對水土造成的傷害？
+						<br><br>
+						從「問題出在哪裡」與「我們該怎麼面對與因應」著手，內容包括：現況分析、成因探討、面對問題與因應辦法等。切換觀點與視角，山上的茶園、菜園對水土保持是否有影響？都市關於水利的建設如水門、抽水站對治水防洪產生哪些功效。並納入如：「台北好好淹」、｢防災易起來」、｢他國作法」等相關資訊。
+					</h3>
+	      </div>
+      </section>
+
+	    <section class="page4">
+	      <div class="page_container">
+          <h2>問題三<br>
+					圖文不符賴以為生的方式是靠承接商業案，所以每個企劃師一定都會遇到商業案。假設今天你能夠選擇客戶...<br>
+					</h2>
+					<h2 style="font-size:14pt;">
+					1.你最希望合作的客戶是誰？<br>
+					2.請選擇一個客戶並說明你認為資訊設計能為他們改善的事情有哪些。<br>
+					3.你認為你有什麼樣的個人特質或技能適合為這個客戶服務？（總字數限250字內）<bt>
+					</h2>
+					<h3 style="line-height: 200%;">
+					1.《臺灣鐵路管理局》<br>
+					2.讓資訊更清楚、動線更流暢，誤點的時候不至於天怒人怨，買不到票的時候不會讓人想找民代立委，更好是能夠做到讓火車搭得愉快舒心，進車站就覺得：｢哇，這好有趣。」讓乘客看著車次表的時候心中升起期待可以前往那裡，連外國人也可以駕輕就熟地搭火車自由來去。<br>
+					3.藉由｢文化人類學」、｢社會心理學」的訓練進而分析人們的行為與習癖，規劃能夠反應旅客需求的資訊系統。<br>
+					曾經搭火車通勤、旅遊、往返各地，途經許多國內、外的火車站，得以從經驗中比較不同的設計，作為參照，找到好的解決辦法與呈現方案。
+					</h3>
+  	    </div>
+  	    <img src="phones.png" alt="phones">
+      </section>
+
+			<section class="page5">
+	      <div class="page_container">
+					<h2 >問題四<br>
+							請分享你最近期（越近越好）看的一本書∕或文章，並說明：<br>
+					</h2>
+					<h2 style="font-size:14pt">
+							1.你接觸到它的方式<br>
+							2.它引起你興趣翻閱的動機是什麼<br>
+							3.你的觀看心得<br>
+							4.試用一句話推薦這本書（or文章）<br>
+							（總字數限200字內）
+					</h2>
+					<h3>
+					《沒有你的餐桌》<br>
+					1.曾經和朋友聊及家裡對吃飯的認真。因此，他推薦了這本書給我。<br>
+					2.想看看川本三郎這位走過精彩一生的老人，如何從吃飯這件事回顧過往。<br>
+					3.很常忙著工作而忘了吃的興味，但食物也是一種人與世界之間重要的連結。在這本書中，看見作者餐桌上不同的人生階段與況味，趣味、撫慰與懷念之情油然而生。豆腐、納豆、熱清酒，等到再年長一些或許會愛上，嚐得出箇中滋味。<br>
+					4.咀嚼時代，反芻記憶，直到人情故往在齒頰靄靄生香。
+					</h3>
+
+				</div>
+      </section>
+
+			<section class="page4">
+	      <div class="page_container">
+          <h2>問題五<br>
+						 請分享你人生中最討厭的東西，人事物皆可，並說明原因。（字數不限）<br></h2>
+					<h3 >
+						常常只是一時氣不過，看到有人亂丟垃圾、欺負弱小動物、搶道超車，究竟是為什麼呢？亂丟垃圾的人像是不願意為自己負責任，欺負弱小動物等於不把生命當一回事，置馬路上的人車於風險危機，搶道超車是為了老婆要生還是小三在床上等著？
+					</h3>
+					<h3>
+						因為常常很氣惱，所以也曾花了一些時間觀察這樣的人，他們往往看起來並不像是生命出現了什麼難關，而像是某種錯置了的系統卡在思維中；甚或有些人，可能在工作上、在家人眼中還正派磊落、樂於助人？
+					</h3>
+					<h3>
+						於是，我慢慢感受到世界上，許多事情並非一分為二，討厭和喜歡像是把自己放進某種相對位置與座標，但也可能讓自己失去其他感受。於是，儘可能要自己放下討厭，在黑白之間的灰色地帶，挖掘與闡述不同的觀點與意義。
+					</h3>
+					<h3>
+						因為這樣，反倒是自己，常常很惹人厭的，聽到朋友、家人說些什麼，就想要辯駁、討論，譬如廢死、多元成家、統一獨立……這類大家仍不見得已有共識的議題。
+					</h3>
+					<h3>
+						意識到這種情況，只好提醒自己謹言慎行，別讓自己成為別人生命中最討厭的人事物。
+					</h3>
+  	    </div>
+  	    <img src="phones.png" alt="phones">
+      </section>
+    </div>
+  </div>
+</body>
+</html>
